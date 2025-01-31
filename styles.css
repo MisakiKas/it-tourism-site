@@ -24,7 +24,7 @@ nav ul li {
     margin: 0 10px;
 }
 
-nav a {
+.nav-link {
     text-decoration: none;
     color: white; /* Text color set to white */
     background-color: #654321; /* Background color set to dark brown */
@@ -33,7 +33,7 @@ nav a {
     border-radius: 5px; /* Added border radius for rounded corners */
 }
 
-nav a:hover {
+.nav-link:hover {
     background-color: #502c19; /* Slightly darker brown for hover effect */
 }
 
@@ -61,4 +61,3 @@ a:hover, button:hover {
         padding: 10px;
     }
 }
-
