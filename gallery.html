@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - A Famosa</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery img {
+            margin: 10px 0;
+            max-width: 90%;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .description {
+            font-style: italic;
+            color: #666;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,9 +43,18 @@
             <h2>Photo Gallery</h2>
             <p>Explore the beauty of A Famosa through our gallery.</p>
             <div class="gallery">
-                <img src="images/A Famosa Sketch.jpeg" alt="Gallery Image 1">
-                <img src="images/A Famosa in present time.jpeg" alt="Gallery Image 2">
-                <img src="images/A Famosa in the past.jpeg" alt="Gallery Image 3">
+                <div>
+                    <img src="images/A Famosa Sketch.jpeg" alt="A Famosa Sketch">
+                    <div class="description">A Famosa Sketch</div>
+                </div>
+                <div>
+                    <img src="images/A Famosa in present time.jpeg" alt="A Famosa in present time">
+                    <div class="description">A Famosa in present time</div>
+                </div>
+                <div>
+                    <img src="images/A Famosa in the past.jpeg" alt="A Famosa in the past">
+                    <div class="description">A Famosa in the past</div>
+                </div>
             </div>
         </section>
     </main>
@@ -35,4 +63,3 @@
     </footer>
 </body>
 </html>
-
