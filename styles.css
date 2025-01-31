@@ -37,6 +37,26 @@ nav ul li {
     background-color: #502c19; /* Slightly darker brown for hover effect */
 }
 
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery img {
+    margin: 10px 0;
+    max-width: 90%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.description {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+}
+
 a, button {
     display: inline-block;
     padding: 10px 20px;
