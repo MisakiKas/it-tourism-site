@@ -12,3 +12,45 @@ header, nav, main, footer {
     border-radius: 10px;
     margin: 20px;
 }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+a, button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover, button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    header, nav, main, footer {
+        margin: 10px;
+        padding: 10px;
+    }
+}
