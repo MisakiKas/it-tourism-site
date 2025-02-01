@@ -39,24 +39,24 @@
             </ul>
         </section>
 
-        <!-- Currency Converter -->
+       <!-- Currency Converter -->
         <section>
             <h2>Currency Converter</h2>
             <p>Convert your currency to Malaysian Ringgit using the latest exchange rates.</p>
             <div id="currency-converter">
-                <form>
-                    <label for="amount">Amount:</label>
-                    <input type="number" id="amount" name="amount" required>
-                    <label for="from-currency">From:</label>
-                    <select id="from-currency" name="from-currency">
-                        <!-- Currency options will be populated dynamically -->
-                    </select>
-                    <input type="hidden" id="to-currency" name="to-currency" value="MYR">
-                    <button type="button" onclick="convertCurrency()">Convert</button>
-                </form>
-                <div id="conversion-result"></div>
-            </div>
-        </section>
+        <form>
+            <label for="amount">Amount (in Malaysian Ringgit):</label>
+            <input type="number" id="amount" name="amount" required>
+            <label for="from-currency">From:</label>
+            <select id="from-currency" name="from-currency">
+                <!-- Currency options will be populated dynamically -->
+            </select>
+            <input type="hidden" id="to-currency" name="to-currency" value="MYR">
+            <button type="button" onclick="convertCurrency()">Convert</button>
+        </form>
+        <div id="conversion-result"></div>
+    </div>
+</section>
 
         <!-- Google Reviews Section -->
         <section>
