@@ -39,24 +39,24 @@
             </ul>
         </section>
 
-       <!-- Currency Converter -->
+        <!-- Currency Converter -->
         <section>
             <h2>Currency Converter</h2>
             <p>Convert your currency to Malaysian Ringgit using the latest exchange rates.</p>
             <div id="currency-converter">
-        <form>
-            <label for="amount">Amount (in Malaysian Ringgit):</label>
-            <input type="number" id="amount" name="amount" required>
-            <label for="from-currency">From:</label>
-            <select id="from-currency" name="from-currency">
-                <!-- Currency options will be populated dynamically -->
-            </select>
-            <input type="hidden" id="to-currency" name="to-currency" value="MYR">
-            <button type="button" onclick="convertCurrency()">Convert</button>
-        </form>
-        <div id="conversion-result"></div>
-    </div>
-</section>
+                <form>
+                    <label for="amount">Amount (in Malaysian Ringgit):</label>
+                    <input type="number" id="amount" name="amount" required>
+                    <label for="from-currency">From:</label>
+                    <select id="from-currency" name="from-currency">
+                        <!-- Currency options will be populated dynamically -->
+                    </select>
+                    <input type="hidden" id="to-currency" name="to-currency" value="MYR">
+                    <button type="button" onclick="convertCurrency()">Convert</button>
+                </form>
+                <div id="conversion-result"></div>
+            </div>
+        </section>
 
         <!-- Google Reviews Section -->
         <section>
@@ -80,12 +80,13 @@
             <p>Find us on the map below:</p>
             <div id="map">
                 <iframe
-                    src="YOUR_GOOGLE_MAPS_EMBED_URL_FOR_LOCATION"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15947.597263773658!2d102.24008951811496!3d2.191820206859635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f1e0a3a7681d%3A0xc2e4da7ca10e63b5!2sA%20Famosa!5e0!3m2!1sen!2smy!4v1738405676653!5m2!1sen!2smy"
                     width="600"
                     height="450"
                     style="border:0;"
                     allowfullscreen=""
-                    loading="lazy">
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
         </section>
