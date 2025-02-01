@@ -42,3 +42,4 @@ async function convertCurrency() {
 }
 
 document.addEventListener('DOMContentLoaded', populateCurrencyOptions);
+
