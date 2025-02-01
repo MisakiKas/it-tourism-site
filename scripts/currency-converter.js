@@ -10,11 +10,18 @@ async function populateCurrencyOptions() {
     const rates = await fetchRates();
     const fromCurrencySelect = document.getElementById('from-currency');
     
+    const currencyNames = {
+        'USD': 'United States Dollar (USD)',
+        'EUR': 'Euro (EUR)',
+        'GBP': 'British Pound (GBP)',
+        // Add more currencies as needed
+    };
+
     Object.keys(rates).forEach(currency => {
-        if (currency !== 'MYR') {
+        if (currency !== 'MYR' && currencyNames[currency]) {
             const option = document.createElement('option');
             option.value = currency;
-            option.textContent = currency;
+            option.textContent = currencyNames[currency];
             fromCurrencySelect.appendChild(option);
         }
     });
@@ -31,14 +38,14 @@ async function convertCurrency() {
         return;
     }
 
-    const rate = rates[fromCurrency];
+    const rate = rates[fromCurrency.split(' ')[0]]; // Extract currency code from full name
     if (!rate) {
         alert('Currency not supported.');
         return;
     }
 
     const result = amount * (rates[toCurrency] / rate);
-    document.getElementById('conversion-result').innerText = `${amount} ${fromCurrency} = ${result.toFixed(2)} ${toCurrency}`;
+    document.getElementById('conversion-result').innerText = `${amount} MYR = ${result.toFixed(2)} ${fromCurrency.split(' ')[0]}`;
 }
 
 document.addEventListener('DOMContentLoaded', populateCurrencyOptions);
